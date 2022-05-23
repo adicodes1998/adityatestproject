@@ -1,0 +1,18 @@
+<button class="btn btn-success" (click)="checkDate()">Go</button>
+<input
+  type="date"
+  [(ngModel)]="date"
+  id="birthday"
+  name="birthday"
+  placeholder="dd-mm-yyyy"
+  value=""
+  [min]="isValidDate"
+  max="9999-12-31"
+  (keyup)="dateKeyUp()"
+/>
+
+<table>
+  <tr>
+    <td></td>
+  </tr>
+</table>
